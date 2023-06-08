@@ -1,0 +1,76 @@
+body{
+    position: relative;
+    max-width: 100%;
+    background-color: bisque;
+}
+header{
+    align-self: center;
+    text-align: center;
+    max-width: 100%;
+}
+header img{
+    max-width: 100%;
+    width: 50%;
+}
+.menu{
+    list-style: none;
+}
+#menu{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    align-self: center;
+    text-align: center;
+    font-size: 30px;
+    background-color: #FFAAC9;
+    font-weight: 600;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#menu ul span{
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFE7CE;
+}
+#menu ul li:hover{
+    color: #FFCDA8;
+    cursor: pointer;
+}
+/* Footer */
+footer {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 20px;
+    align-self: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+footer table{
+    margin: 0;
+    border: 3px solid black;
+    max-width: 100%;
+    width: 100%;
+    align-self: center;
+    text-align: center;
+}
+footer table tr td{
+    font-weight: 540;
+}
+.sum td{
+    font-weight: 700;
+}
+.summit{
+    font-weight: 600;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    background-color: #E4A5FF;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
+}
+.summit:active{
+    scale: 0.9;
+}

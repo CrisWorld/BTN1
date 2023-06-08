@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <header>
+        <img class="logo" src="lgoo.png" alt="">
+    </header>
+    <div id="menu">
+        <ul class="hot-pots menu">
+            <span>LẨU</span> 
+            <li class="item" id="tokbokki" onclick="var type = 'tokbokki'; myfunctions(type)">Lẩu Tokbokki</li>
+            <li class="item" id="cow-hotpot" onclick="var type = 'cow-hotpot'; myfunctions(type)">Lẩu Bò Hàn Quốc</li>
+            <li class="item" id="special-cow-hotpot" onclick="var type = 'special-cow-hotpot'; myfunctions(type)">Lẩu Bò Đặc Biệt</li>
+        </ul>
+        <ul class="korean-foods menu">
+            <span>ĂN VẶT HÀN QUỐC</span> 
+            <li class="item" id="rainbow-kimbap" onclick="var type = 'rainbow-kimbap'; myfunctions(type)">Kimbap Cầu Vòng</li>
+            <li class="item" id="fried-kimbap" onclick="var type = 'fried-kimbap'; myfunctions(type)">Kimbap Chiên</li>
+            <li class="item" id="fish-ball" onclick="var type = 'fish-ball'; myfunctions(type)">Cá Viên Lắc Phô Mai</li>
+        </ul>
+        <ul class="skewers menu">
+            <span>Xiên Que</span>
+            <li class="item" id="met-ta-la" onclick="var type = 'met-ta-la'; myfunctions(type)">Mẹt Tá Lả</li>
+            <li class="item" id="fish-cow-shrimp" onclick="var type = 'fish-cow-shrimp'; myfunctions(type)">Cá/Bò/Tôm</li>
+            <li class="item" id="fried-potato" onclick="var type = 'fried-potato'; myfunctions(type)">Khoai Tây Chiên</li>
+        </ul>
+        <ul class="drinks menu">
+            <span>Thức Uống</span>
+            <li class="item" id="water" onclick="var type = 'water'; myfunctions(type)">Nước Suối</li>
+            <li class="item" id="coca" onclick="var type = 'coca'; myfunctions(type)">Coca Cola</li>
+            <li class="item" id="sting" onclick="var type = 'sting'; myfunctions(type)">Sting</li>
+        </ul>
+    </div>
+    <footer>
+        <table id="bill">
+            <tr>
+                <th>Tên Món</th>
+                <th>Số Lượng</th>
+                <th>Đơn Giá</th>
+                <th>Thành Tiền</th>
+            </tr>
+        </table>
+        <table class="sum">
+            <td>Tổng</td>
+            <td id="sum">0</td>
+        </table>
+        <button class="summit" onclick="reset(); alert('Đã gửi')">
+            Order
+        </button>
+        <button class="summit" onclick="reset()">Hủy</button>
+    </footer>
+</body>
+</html>
